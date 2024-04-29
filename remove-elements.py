@@ -29,11 +29,23 @@ def removeElementInPlace(arr, val):
     k = 0
 
     for index in range(len(arr)): 
-        if(arr[index] != val):
+        if arr[index] != val:
             arr[k] = arr[index]
             k += 1
     return print(k)
 
 
-removeElementInPlace([1,3, 2,3,4,5,6,7,8], 3)
+# removeElementInPlace([1,3, 2,3,4,5,6,7,8], 3)
+
+
+def removeElement2(arr, val):
+
+    l = 0
+
+    for index in range(len(arr)):
+        if arr[index] != val:
+            arr[l] = arr[index]
+            k +=1
+
+
 
