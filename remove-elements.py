@@ -49,3 +49,13 @@ def removeElement2(arr, val):
 
 
 
+def removeElements(arr, val):
+    k = 0
+    for index in range(len(arr)):
+        if arr[index] != val:
+            arr[k] = arr[index]
+            k += 1
+
+
+
+
