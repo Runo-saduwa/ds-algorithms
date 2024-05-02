@@ -70,4 +70,13 @@ def removeElement2(arr, num):
     return k
 
 
+def removeElement3(arr, n):
+    k = 0
+    for index in range(len(arr)):
+        if arr[index] != n:
+            arr[k] = arr[index]
+            k += 1
+
+    return k
+
 
