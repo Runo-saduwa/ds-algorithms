@@ -17,13 +17,11 @@ class DynamicArray:
       if self.length == self.capacity:
          self.resize()
 
-
       self.arr[self.length] = n
       self.length += 1
 
   def popback(self) -> int:
-      self.length = -1
-
+      self.length -= 1
       return self.arr[self.length]
   
   def resize(self) -> None:
