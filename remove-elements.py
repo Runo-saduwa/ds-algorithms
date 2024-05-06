@@ -80,3 +80,15 @@ def removeElement3(arr, n):
     return k
 
 
+
+def removeElementX(arr, val):
+    k = 0
+
+    for index in range(len(arr)):
+        if arr[index] == val:
+            arr[k] = arr[index]
+            k += 1
+    
+    return k
+
+
